@@ -1,0 +1,40 @@
+public static void main(String[] args) {
+      
+     int numero;
+     Scanner leer = new Scanner(System.in);
+     
+        System.out.println("Ingresar un numero para evaluar si es Primo o No Primo");
+        numero=leer.nextInt();
+        
+        if (evaluaNumero(numero)) {
+            System.out.println("El Número ingresado es Primo !");
+            
+        } else {
+            System.out.println("El Número ingresado no es Primo !");
+        }
+
+
+    }
+Diego Silva  a  Todos 21:38
+declaracion de funcion ejercicio 4
+ public static boolean evaluaNumero(int numero){
+       
+        
+        boolean condicion=false;
+        int resto;
+        
+        int contador=0;
+        
+                
+        for (int i = 1; i <= numero; i++) {
+            resto=numero%i;
+            if (resto==0) {
+                contador++;
+            } 
+        }
+        if (contador==2) {
+            condicion=true;
+        }
+        return condicion;
+        
+    }
