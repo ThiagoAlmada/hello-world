@@ -10,7 +10,7 @@ public static void main(String[] args) {
             System.out.println("El Número ingresado es Primo !");
             
         } else {
-            System.out.println("El Número ingresado no es Primo !");
+            System.out.println("El Número ingresado no es Primol !");
         }
 
 
